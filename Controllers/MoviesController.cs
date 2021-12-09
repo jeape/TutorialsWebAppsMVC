@@ -7,16 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
-using MvcMovie.Data;
-using MvcMovie.Models;
+using MovieApp.Data;
+using MovieApp.Models;
 
-namespace MvcMovie.Controllers
+namespace MovieApp.Controllers
 {
     public class MoviesController : Controller
     {
-        private readonly MvcMovieContext _context;
+        private readonly MovieContext _context;
 
-        public MoviesController(MvcMovieContext context)
+        public MoviesController(MovieContext context)
         {
             _context = context;
         }

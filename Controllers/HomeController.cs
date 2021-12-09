@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-using MvcMovie.Models;
+using MovieApp.Models;
 
-namespace MvcMovie.Controllers
+namespace MovieApp.Controllers
 {
     public class HomeController : Controller
     {

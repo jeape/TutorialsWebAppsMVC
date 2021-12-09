@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MvcMovie.Data;
+using MovieApp.Data;
 
-namespace MvcMovie.Migrations
+namespace MovieApp.Migrations
 {
-    [DbContext(typeof(MvcMovieContext))]
+    [DbContext(typeof(MovieContext))]
     [Migration("20211208105743_InitialCreate")]
     partial class InitialCreate
     {
@@ -21,7 +21,7 @@ namespace MvcMovie.Migrations
                 .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MvcMovie.Models.Movie", b =>
+            modelBuilder.Entity("MovieApp.Models.Movie", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
